@@ -9,11 +9,11 @@ fi
 echo "=======Pushing the image to my docker hub public repo grajappan4401/cclookup======="
 docker push grajappan4401/checksampleurls:latest
 echo "=======Installing Minikube======="
-#brew install minikube
+brew install minikube
 echo "=======Starting the minikube cluster====="
 minikube start --vm-driver=virtualbox
 echo "=======Install kubectl in local machine======"
-#brew install kubectl
+brew install kubectl
 echo "=======Set kubeconfig context to minikube====="
 kubectl config set-context minikube
 echo "=======Deploying the CheckURL Service API========"

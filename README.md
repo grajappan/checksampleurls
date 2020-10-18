@@ -18,8 +18,8 @@ Once deployed on to minikube the service can be accessed using http://"Minikube-
 Accessing the /metrics endpoint shows the recorded/exposed metrics
 ![Image of metrics](metrics-screenshot.png)
 
-prom-graf.yaml contains the kuberenetes spec for deploying prometheus and grafana on the same minikube cluster
-Prometheus can be accessed at http://"Minikube-IP-Address":32090 
+prom-graf.yaml contains the kuberenetes spec for deploying prometheus and grafana on the same minikube cluster.  
+Prometheus can be accessed at http://"Minikube-IP-Address":32090.  
 Accessing the url records the availability of the sample urls and measures the response times and exposes them as prometheus metrics on /metrics endpoint
 ![Image of prometheys](prometheus-screenshot.png)
 

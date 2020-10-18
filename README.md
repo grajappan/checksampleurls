@@ -6,6 +6,11 @@ k8s.sh contains the complete steps from scrtach which includes commands for inst
 Deploy-to-Minikube.sh contains the steps just to deploy the service to an existing minikube
 
 checkurls_service.py is the actual python implementation of the service.  
+test_checkurls_service.py containts the Unit tests for the service. Unitests can be executed directly by running the python code.  
+
+python3 test_checkurls_service.py.   
+![Image of service](unittest-screenshot.png)
+
 checkurls_service.yaml contains the kubernetes spec for deploying the service.   
 Once deployed on to minikube the service can be accessed using http://"Minikube-IP-Address":31080
 ![Image of service](homepage-screenshot.png)

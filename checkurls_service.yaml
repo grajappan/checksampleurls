@@ -1,0 +1,37 @@
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: checkurls-service
+spec:
+  type: NodePort
+  selector:
+    app: checkurls
+  ports:
+    - port: 2080
+      targetPort: 2080
+      nodePort: 31080
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: checkurls-deployment
+  labels:
+    app: checkurls
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: checkurls
+  template:
+    metadata:
+      labels:
+        app: checkurls
+    spec:
+      containers:
+      - name: checkurls
+        image: registry.hub.docker.com/grajappan4401/checksampleurls:latest
+        ports:
+        - containerPort: 2080
+
+    

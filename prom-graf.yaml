@@ -111,9 +111,9 @@ spec:
         emptyDir: {}
       - name: grafana-datasources
         hostPath: 
-          path: /Users/grajappa/Personal/Prepare/vmware/grafana/provisioning/datasources
+          path: /home/ec2-user/grafana/provisioning/datasources
           type: Directory
       - name: grafana-dashboards
         hostPath: 
-          path: /Users/grajappa/Personal/Prepare/vmware/grafana/provisioning/dashboards
+          path: /home/ec2-user/grafana/provisioning/dashboards
           type: Directory

@@ -111,9 +111,9 @@ spec:
         emptyDir: {}
       - name: grafana-datasources
         hostPath: 
-          path: /home/ec2-user/checksampleurls/grafana/provisioning/datasources
+          path: /checksampleurls/grafana/provisioning/datasources
           type: Directory
       - name: grafana-dashboards
         hostPath: 
-          path: /home/ec2-user/checksampleurls/grafana/provisioning/dashboards
+          path: /checksampleurls/grafana/provisioning/dashboards
           type: Directory
